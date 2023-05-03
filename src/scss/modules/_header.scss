@@ -7,6 +7,10 @@ header img {
   display: flex;
 }
 
+.link-container a {
+  margin-right: 50px;
+}
+
 .link-container {
   display: flex;
   align-items: center;
@@ -15,11 +19,26 @@ header img {
 }
 
 header {
-  //   background-image: url(../img/background-image-header.webp);
+  font-family: "coolvetica", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+  background-image: url(../img/background-image-header.webp);
+  background-color: rgba(0, 0, 0, 0.4);
+  background-blend-mode: multiply;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-// .speach {
-//   height: 1px;
-// }
+.speach {
+  display: flex;
+  height: 800px;
+}
+
+.speach h2 {
+  font-family: "coolvetica", sans-serif;
+  font-weight: 700;
+  font-size: 70px;
+  display: flex;
+  align-items: center;
+}
