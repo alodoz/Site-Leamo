@@ -12,6 +12,11 @@ h3 {
   font-size: 50px;
 }
 
+.leamo-wrapper p  {
+  font-family: Helvetica, sans-serif;
+  font-size: 24px;
+}
+
 .leamo-wrapper {
   width: 50%;
   margin: 0 auto;
@@ -28,11 +33,17 @@ h3 {
 }
 
 .leamo-refreshment p {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Helvetica, sans-serif;
   font-size: 24px;
-  text-align: center;
+  padding: 14px 12%;
 }
 
 .leamo-refreshment h2 {
   opacity: 0.5;
+  padding: 12% 12% 0;
+}
+
+.selling-places {
+  padding: 14px 12%;
+  font-size: 24px;
 }
