@@ -12,17 +12,12 @@ h3 {
   font-size: 50px;
 }
 
-.leamo-wrapper p  {
-  font-family: Helvetica, sans-serif;
-  font-size: 24px;
-}
-
 .leamo-wrapper {
-  width: 50%;
-  margin: 0 auto;
-  width: 960px;
   margin-top: 45px;
   margin-bottom: 120px;
+  font-size: 24px;
+  text-align: center;
+  font-family: Helvetica, sans-serif;
   font-size: 24px;
 }
 
@@ -30,6 +25,7 @@ h3 {
   background-color: #1c7cb7;
   color: white;
   font-family: "coolvetica";
+  // transform: translate(0, 50%);
 }
 
 .leamo-refreshment p {
@@ -44,6 +40,12 @@ h3 {
 }
 
 .selling-places {
-  padding: 14px 12%;
+  margin: 14px 12%;
   font-size: 24px;
+  font-family: "coolvetica";
+  font-weight: 700;
+  background-color: white;
+  color: #1c7cb7;
+  border-radius: 100;
+  padding: 15px 25px;
 }
