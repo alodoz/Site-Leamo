@@ -22,6 +22,9 @@ h3 {
 }
 
 .leamo-refreshment {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-color: #1c7cb7;
   color: white;
   font-family: "coolvetica";
@@ -39,7 +42,9 @@ h3 {
   padding: 12% 12% 0;
 }
 
-.selling-places {
+.selling-places a {
+  display: inline-block;
+  justify-content: right;
   margin: 14px 12%;
   font-size: 24px;
   font-family: "coolvetica";
@@ -48,4 +53,8 @@ h3 {
   color: #1c7cb7;
   border-radius: 100;
   padding: 15px 25px;
+}
+
+.selling-places {
+  display: inline-block;
 }
