@@ -1,0 +1,32 @@
+footer {
+  background-image: url(../img/footer-image.jpg);
+  color: white;
+  background-size: cover;
+  font-family: Helvetica;
+}
+
+nav {
+  background-color: rgba(0, 0, 0, 0.784);
+  padding-top: 180px;
+  padding-bottom: 170px;
+}
+
+footer h2 {
+  font-family: "coolvetica";
+  opacity: 0.65;
+  font-size: 16px;
+}
+
+footer div {
+  font-size: 23px;
+  margin-top: 16px;
+}
+
+.media {
+  display: flex;
+}
+
+.linkedin,
+.instagram {
+  margin-left: 23px;
+}

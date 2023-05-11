@@ -58,3 +58,23 @@ h3 {
 .selling-places {
   display: inline-block;
 }
+
+.leamo-specification {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #ffc41f;
+  color: white;
+  font-family: "coolvetica";
+}
+
+.leamo-specification h2 {
+  opacity: 0.5;
+  padding: 12% 12% 0;
+}
+
+.leamo-specification p {
+  font-family: Helvetica, sans-serif;
+  font-size: 24px;
+  padding: 14px 12%;
+}
