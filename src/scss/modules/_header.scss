@@ -45,4 +45,136 @@ header {
   align-items: center;
 }
 
-// ##########
+// ########## burger-menu
+$blackColor: #020304;
+$highlightColor: #ffc41f;
+$whiteColor: #ffffff;
+$invisibleColor: transparent;
+
+h1 {
+  position: fixed;
+  top: 40px;
+  left: 40px;
+  z-index: 6;
+  font-size: 20px;
+  font-weight: 900;
+  font-family: sans-serif;
+  text-transform: uppercase;
+}
+
+h1 > span {
+  text-transform: none;
+  opacity: 0.5;
+  font-weight: 300;
+  font-size: 12px;
+}
+
+input + label {
+  display: none; /* Masquer par défaut sur les appareils autres que mobiles et tablettes */
+}
+
+@media (max-width: 1000px) {
+  /* Afficher seulement sur les appareils avec une largeur maximale de 768px */
+  input + label {
+    display: block; /* Afficher le burger menu sur les appareils mobiles et tablettes */
+    position: fixed;
+    top: 8%;
+    right: 8%;
+    height: 19px;
+    width: 25px;
+    z-index: 5;
+  }
+
+  input + label span {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: 50%;
+    margin-top: -1px;
+    left: 0;
+    display: block;
+    background: $whiteColor;
+    transition: 0.5s;
+  }
+
+  input + label span:first-child {
+    top: 3px;
+  }
+
+  input + label span:last-child {
+    top: 16px;
+  }
+}
+
+label:hover {
+  cursor: pointer;
+}
+
+input:checked + label span {
+  opacity: 0;
+  top: 50%;
+}
+
+input:checked + label span:first-child {
+  opacity: 1;
+  transform: rotate(405deg);
+}
+
+input:checked + label span:last-child {
+  opacity: 1;
+  transform: rotate(-405deg);
+}
+
+.burger {
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  transition: 0.5s;
+  transition-delay: 0.5s;
+  overflow: hidden;
+}
+
+.burger ul {
+  text-align: center;
+  position: absolute;
+  top: 35%;
+  left: 20%;
+  right: 20%;
+}
+
+.burger ul li {
+  opacity: 0;
+  transition: 0.5s;
+  transition-delay: 0s;
+  list-style-type: none;
+}
+
+.burger ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $whiteColor;
+  font-weight: 700;
+  font-family: sans-serif;
+  display: block;
+  padding: 30px;
+}
+
+input:checked ~ .burger {
+  height: 100%;
+  transition-delay: 0s;
+  background-color: $highlightColor;
+}
+
+input:checked ~ .burger ul li {
+  opacity: 1;
+}
+
+@media (max-width: 1000px) {
+  .link-container {
+    display: none;
+  }
+}
