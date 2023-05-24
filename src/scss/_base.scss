@@ -56,3 +56,34 @@ video {
 a {
   text-decoration: none;
 }
+
+.speach {
+  font-weight: 700;
+  font-size: 70px;
+}
+
+h3 {
+  font-size: 50px;
+}
+
+@media (max-width: 600px) {
+  .speach {
+    font-size: 50px;
+  }
+
+  h3 {
+    font-size: 35px;
+  }
+
+  main p {
+    font-size: 18px;
+  }
+
+  .product-title {
+    font-size: 35px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+}
